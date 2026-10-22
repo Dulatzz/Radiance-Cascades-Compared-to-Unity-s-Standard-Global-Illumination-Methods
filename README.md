@@ -24,6 +24,28 @@ This repository contains the experimental materials for the paper:
 
 
 
+## Data Structure
+
+Measurements are stored in `Measured Data/`, one folder per test scene:
+
+- `Isometric/`
+- `Realistic FPS/`
+- `Stylized Fps/`
+
+Each scene folder contains:
+
+- `gi_run_<METHOD>_<date>.csv` — raw log for one GI method (columns: `time_sec`, `ms_per_frame`, `fps`, `gi_mode`)
+- `Performance_comparison_<Scene>.xlsx` — summary table for the scene
+
+GI methods (`<METHOD>` in file names):
+
+- `NoGI` — no global illumination (baseline)
+- `RC` — Radiance Cascades
+- `SSGI` — Screen Space Global Illumination
+- `RTLM`
+
+
+
 \## Engine Version
 
 
